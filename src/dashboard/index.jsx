@@ -34,8 +34,8 @@ function Dashboard() {
     fetchResumes();
   }, [user]);
 
-  const handleResumeCreated = (resumeId) => {
-    navigate(`/dashboard/resume/${resumeId}/edit`);
+  const handleResumeCreated = (_id) => {
+    navigate(`/dashboard/resume/${_id}/edit`);
   };
 
   return (
